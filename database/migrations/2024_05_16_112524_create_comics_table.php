@@ -15,14 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('slug', 70)->unique();
             $table->string('title', 50);
-            $table->text('description');
+            $table->text('description')->unsigned();
             $table->text('thumb');
             $table->string('price', 10);
-            $table->string('series', 50);
-            $table->date('sale_date');
-            $table->string('type', 50);
-            $table->text('artists');
-            $table->text('writers');
+            $table->string('series', 50)->unsigned();
+            $table->date('sale_date')->unsigned();
+            $table->string('type', 50)->unsigned();
+            $table->text('artists')->unsigned();
+            $table->text('writers')->unsigned();
             $table->timestamps();
         });
     }

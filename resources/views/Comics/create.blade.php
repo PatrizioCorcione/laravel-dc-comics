@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-  <div class="container my-5 ">
+  <div class="container form">
 
     <form action="{{ route('comics.store') }}" method='POST' class="row g-3">
       @csrf

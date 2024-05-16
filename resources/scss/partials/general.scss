@@ -1,4 +1,4 @@
-.index{
+.index-card{
     img{
         object-fit: cover;
         height: 440px;
@@ -21,7 +21,7 @@ header{
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
     overflow: hidden;
 }
 
@@ -43,5 +43,8 @@ header{
     z-index: 1; /* Ensure overlay is above the iframe */
 }
 
+.form,.index{
+    margin: 100px;
+}
 
 

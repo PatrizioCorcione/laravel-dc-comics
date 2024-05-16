@@ -1,11 +1,11 @@
 @extends('layout.main')
 
 @section('content')
-  <div class="container my-5 ">
+  <div class="container index ">
     <div class="row">
       @forelse ($comics as $item)
         <div class="col my-3 ">
-          <div class="card index " style="width: 18rem;">
+          <div class="card index-card " style="width: 18rem;">
             <img src="{{ $item->thumb }}" class="card-img-top" alt="{{ $item->title }}">
             <div class="card-body d-flex flex-column justify-content-between ">
               <h5 class="card-title">{{ $item->title }}</h5>
