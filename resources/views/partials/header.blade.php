@@ -2,4 +2,5 @@
   <h1>Header</h1>
   <a href="{{ route('home') }}">Home</a>
   <a href="{{ route('comics.index') }}">Fumetti</a>
+  <a href="{{ route('comics.create') }}">Aggiungi fumetto</a>
 </header>
