@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-  <div class="container">
+  <div class="container my-5 ">
     <div class="row">
       <div class="col">
         <img class=" show-img" src="{{ $comic->thumb }}" alt={{ $comic->title }}>
