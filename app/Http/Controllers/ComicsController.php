@@ -11,7 +11,8 @@ class ComicsController extends Controller
      */
     public function index()
     {
-        //
+
+        return view('comics.index');
     }
 
     /**
