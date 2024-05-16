@@ -1,3 +1,15 @@
+header{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+body{
+    background-image: url(https://img.freepik.com/premium-vector/abstract-halftone-background-concept_23-2148590220.jpg?w=826);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
 .index-card{
     img{
         object-fit: cover;
@@ -9,12 +21,6 @@
 }
 .show-img{
     height: 600px;
-}
-header{
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
 }
 
 .video-container {
@@ -43,8 +49,18 @@ header{
     z-index: 1; /* Ensure overlay is above the iframe */
 }
 
-.form,.index{
+.form,.index,.show{
     margin: 100px;
 }
+.form{
+    color:#ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.show{
+    color: white;
+    font-weight: bold;
+}
+
 
 
