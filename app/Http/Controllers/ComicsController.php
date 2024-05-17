@@ -60,24 +60,33 @@ class ComicsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $comic_data = $request->all();
+        if ($comic_data['title'] === $comic->title) {
+            $comic_data['slug'] = $comic->slug;
+        } else {
+            $comic_data['slug'] = Helper::makeSlug($comic_data['title'], new Comic());
+        }
+        $comic->fill($comic_data);
+        $comic->update($comic_data);
+        return redirect()->route('comics.show', $comic);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return redirect()->route('comics.index')->with('deleted', 'Il fumetto ' . $comic->title . ' e stato eliminato');
     }
 }

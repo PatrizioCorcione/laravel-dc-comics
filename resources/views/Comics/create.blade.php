@@ -8,7 +8,7 @@
 
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Data di uscita</label>
-        <input name='sale_date' type="text" class="form-control" id="inputPassword4">
+        <input name='sale_date' type="date" class="form-control" id="inputPassword4">
       </div>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Titolo</label>
@@ -31,11 +31,11 @@
         <input name='type' type="text" class="form-control" id="inputPassword4">
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Disegnatori</label>
+        <label for="inputEmail4" class="form-label">Disegnatori (separare con la virgola)</label>
         <input name='artists' type="text" class="form-control" id="inputEmail4">
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Scrittori</label>
+        <label for="inputPassword4" class="form-label">Scrittori (separare con la virgola)</label>
         <input name='writers' type="text" class="form-control" id="inputPassword4">
       </div>
       <div class="col-12 input-group">
