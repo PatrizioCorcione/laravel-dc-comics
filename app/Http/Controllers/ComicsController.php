@@ -13,7 +13,7 @@ class ComicsController extends Controller
      */
     public function index()
     {
-        $comics = Comic::all();
+        $comics = Comic::all()->sortDesc();
         return view('comics.index', compact('comics'));
     }
 
