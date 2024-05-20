@@ -5,7 +5,7 @@ header{
     width: 100%;
 }
 body{
-    background-image: url(https://img.freepik.com/premium-vector/abstract-halftone-background-concept_23-2148590220.jpg?w=826);
+    background-image: url(https://img.freepik.com/free-vector/comic-abstract-blue-background_225004-669.jpg?w=826&t=st=1716207620~exp=1716208220~hmac=7f08161d9c1753537719e23ab9cfe75a1f057b54c7886747a8cc41b34962c698);
     background-size: cover;
     background-attachment: fixed;
 
@@ -134,3 +134,7 @@ body{
     -webkit-backface-visibility: hidden;
   }
 
+small{
+    color: red;
+    font-size: 0.9rem;
+}
