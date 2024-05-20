@@ -119,7 +119,7 @@
       @enderror
 
       <div class="col-12">
-        <button class="btn btn-primary" type="submit">Invia</button>
+        <button class="btn btn-light  " type="submit">Invia</button>
       </div>
     </form>
   </div>
